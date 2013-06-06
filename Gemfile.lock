@@ -53,6 +53,9 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    dotenv (0.6.0)
+    dotenv-rails (0.6.0)
+      dotenv (= 0.6.0)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -178,6 +181,7 @@ DEPENDENCIES
   bootstrap_helper
   coffee-rails (~> 3.2.1)
   devise
+  dotenv-rails
   google-api-client
   jquery-rails
   omniauth-google-oauth2

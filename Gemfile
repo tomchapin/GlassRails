@@ -11,6 +11,7 @@ end
 
 group :development, :test do
   gem "sqlite3"
+  gem 'dotenv-rails'
 end
 
 gem "google-api-client"

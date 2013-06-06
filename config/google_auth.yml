@@ -1,9 +1,0 @@
-production: &production
-  client_id: 572230021674-hs5p3amttrodu74phr27d8lk5e8vfe8d.apps.googleusercontent.com
-  secret: 9-AVnubW3NU3lg-10HK0yjxM
-
-development:
-  <<: *production
-
-test:
-  <<: *production
