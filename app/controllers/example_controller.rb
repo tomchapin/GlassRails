@@ -13,7 +13,7 @@ class ExampleController < ApplicationController
   def add_card
     client = User.get_client(current_user)
     mirror = client.discovered_api('mirror', 'v1')
-    timeline_item = mirror.timeline.insert.request_schema.new({ 'text' => "Hey Mark! It's Tom!", 'notification' => { 'level' => 'DEFAULT' }, 'menuItems' => [{ 'action' => 'DELETE' }, { 'action' => 'READ_ALOUD' }] })
+    timeline_item = mirror.timeline.insert.request_schema.new({ 'text' => "Hey Mark! It's Tom!", 'notification' => { 'level' => 'DEFAULT' }, 'menuItems' => [{ 'action' => 'DELETE' }, { 'action' => 'READ_ALOUD' }, { 'action' => 'TOGGLE_PINNED' }] })
 
     result = client.execute(
       :api_method => mirror.timeline.insert,
