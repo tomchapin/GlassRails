@@ -16,6 +16,7 @@ end
 gem "google-api-client"
 gem "rest-client"
 gem "twitter-bootstrap-rails"
+gem 'bootstrap_helper'
 
 gem "devise"
 gem "omniauth-google-oauth2"
