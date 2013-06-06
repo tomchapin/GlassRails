@@ -57,6 +57,7 @@ module GlassRails
     config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
+    config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
     config.assets.enabled = true
     config.assets.compile = true
 
